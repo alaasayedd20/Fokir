@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.shared-item .container .head{
+    
+    text-align: center;
+    margin: auto;
+}
+
+.shared-item .container .head h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 0px;
+}
+.shared-item .container .head .line{
+    background-color: #ff305b;
+    width: 200px;
+    height: 1px;
+    display: inline-block;
+    position: relative;
+}
+.shared-item .container .head .line::before{
+    content: "";
+    width: 100px;
+    height: 0.8px;
+    background-color: #ff305b;
+    position: absolute;
+    bottom: 5px;
+    left: 22%;
+    
+}
+.shared-item .container .head .line::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 5px;
+    left: 22%;
+
+}
+
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/hero\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.home .layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.home .layer .navbar {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.home .layer .navbar .container .logo{
+    padding: 10px 0px;
+    float: left;
+    text-align: center;
+
+}
+.home .layer .navbar .container .pages{
+    padding: 10px 50px 10px 0px;
+    float: right;
+    text-align: center;
+}
+
+.home .layer .navbar .container .pages ul li{
+    float: left;
+    margin: 10px 10px;
+    
+
+}
+.home .layer .navbar .container .pages ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.home .layer .navbar .container .pages ul li a:hover {
+    color: #ff305b;
+}
+
+.home .layer .navbar .container .logo span{
+    color: #ff305b;
+
+}
+.clr{
+    clear: both;
+}
+
+.intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.intro .first{
+    color: white;
+    
+}
+.intro .name{
+    color: #ff305b;
+    font-size: 30px;
+}
+.intro .last{
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    display: inline-block;
+    
+}
+.intro .stop{
+    width: 3px;
+    height: 25px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+/* About */
+.about{
+    padding: 100px 0px;
+}
+.about .container .about-image{
+    width: 30%;
+    float: left;
+
+}
+.about .about-image .border{
+    border: 10px solid rgb(85, 85, 85);
+    border-radius: 5px;
+    
+}
+.about .about-image .border .image{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+.about .about-image .border .image .layer{
+    border-radius: 5px;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+    
+    
+}
+.about .about-image .border .image .layer img{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.about .about-image .border .image .layer ul{
+    margin: 60% 25%;
+}
+.about .about-image .border .image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.about .about-image .border .image:hover .layer{
+    top: 0;
+}
+
+
+
+
+.about .container .about-content{
+    margin-left: 20%;
+    width: 50%;
+    float: left;
+
+    
+}
+.about .container .about-content h2{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.about .container .about-content h2::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-color: #ff305b;
+    width: 5px;
+    height: 57%;
+    
+
+}
+.about .container .about-content p{
+    margin-bottom: 15px;
+    padding: 20px 0px;
+    color: rgb(85, 85, 85);
+    border-bottom: 1px dashed rgb(85, 85, 85);
+    font-size: 17px;
+}
+.about .container .about-content ul li{
+    width: 50%;
+    float: left;
+    margin: 10px 0px;
+    color: rgb(85, 85, 85);
+    font-size: 17px;
+}
+.about .container .about-content ul li span{
+    color: black;
+    font-weight: 500;
+}
+.about .container .about-content .btns button{
+    background-color: #ff305b;
+    padding:  10px 35px 10px 35px;
+    border: none;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 17;
+
+}
+
+
+/* services */
+.services{
+    background-color: #f1f1f1;
+}
+.services .container{
+    padding: 80px 0px;
+}
+
+
+.services .container .item{
+    width: 24%;
+    float: left;
+    padding: 40px 0px;
+    margin: 20px 5px;
+    text-align: center;
+    transition: all 0.4s;
+}
+.services .container .item:hover {
+    background-color: white;
+
+}
+.services .container .item:hover .empty{
+    width: 45px;
+    height: 45px;
+}
+.services .container .item .empty{
+    width: 40px;
+    height: 40px;
+    background-color: #ff305b;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+}
+.services .container .item h3{
+    padding: 10px 5px;
+    font-weight: 600;
+    font-size: 20;
+}
+.services .container .item p{
+    font-size: 17;
+    color: rgb(85, 85, 85);
+    
+}
+
+
+
+
+
+
+
+/* portfolio */
+.portf .container{
+    padding: 80px 0px;
+}
+.portf .container ul{
+    padding: 50px 0px;
+}
+.portf .container ul li{
+    padding: 0px 20px;
+    display: inline-block;
+}
+.portf .container .items .item{
+    width: 30%;
+    float: left;
+    margin: 0px 20px 40px 20px;
+    position: relative;
+}
+.portf .container .items .item img{
+    width: 100%;
+}
+.portf .container .items .item .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0,0.5);
+    opacity: 0;
+    transition: all 0.4s;
+}
+.portf .container .items .item:hover .layer{
+    opacity: 1;
+}
+
+
+
+
+/* numbers */
+.nums{
+    padding: 20px 0px;
+    background-color: #f1f1f1;
+}
+
+.nums .container .item{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.nums .container .empty{
+    width: 20px;
+    height: 20px;
+    background-color: #ff305b;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.nums .container .item h3{
+    color:#333;
+    font-size: 25;
+}
+.nums .container .item p{
+    color: #555555;
+    font-weight: 500;
+}
+
+
+
+
+/* feedback */
+
+
+.feedback .container .feed-box{
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 8px;
+    width: 70%;
+    position: relative;
+    background-color: #f1f1f1
+}
+.feedback .container .feed-box .feed-img{
+    width: 25%;
+    float: left;
+    text-align: right;
+    padding-right: 25px;
+    position: relative;
+    z-index: 2;
+}
+.feedback .container .feed-box .feed-img img{
+    border-radius: 50%;
+    width: 120px;
+}
+
+.feedback .container .feed-box .feed-content{
+    width: 75%;
+    float: left;
+    text-align: left;
+
+}
+.feedback .container .feed-box .feed-content h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 650;
+    color: #333;
+}
+.feedback .container .feed-box .feed-content h5{
+    color: #555555;
+    margin-bottom: 10px;
+
+}
+.feedback .container .feed-box .feed-content p{
+    color: #555555;
+    font-style: italic;
+    font-size: 18;
+    margin-bottom: 10px;
+    
+
+}
+.feedback .container .feed-box .feed-content .colored{
+    border-top: 150px solid #ff305b;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid #ff305b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0px 0px 0px;
+}
+
+
+
+/* blog */
+.blog{
+    background-color: #f1f1f1;
+}
+.blog .container .items{
+    margin: 50px 0px;
+}
+.blog .container .items .item{
+    float: left;
+    width: 31%;
+    margin: 10px;
+    text-align: left;
+    background-color: white;
+}
+.blog .container .items .item img{
+    width: 100%;
+}
+.blog .container .items .item .content{
+    padding: 25px;
+}
+.blog .container .items .item .content p{
+    color: #333;
+    padding: 10px 0px;
+}
+.blog .container .items .item .content h3{
+    color: #333;
+    font-size: 23px;
+}
+
+
+
+
+/* contact */
+.contact .container .first{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.contact .container .first input{
+    width: 25%;
+    height: 35px;
+    border-radius: 5px;
+    border:rgb(212, 212, 212) 1px solid
+
+}
+#dble{
+    margin-left: 25px;
+}
+
+.contact .container .second input{
+    height: 35px;
+    width: 52.5%;
+    border-radius: 5px;
+    border:rgb(212, 212, 212) 1px solid;
+    margin-bottom: 20px;
+}
+.contact .container .last textarea{
+    width: 640px;
+    height: 100px;
+    margin-bottom: 20px;
+    border:rgb(212, 212, 212) 1px solid;
+}
+.contact .container{
+    position: relative;
+}
+.contact .container .btns button{
+    width: 160px;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-color: #ff305b;
+    border-radius: 5px;
+    color: white;
+    font-size: 16;
+    padding: 5px;
+    position: absolute;
+    bottom: 5%;
+    left: 23.6%;
+
+}
+
+
+/* foooter */
+.footer{
+    background-color: rgb(51, 51, 51);
+    margin-top: 40px;
+    text-align: center;
+}
+.footer .container ul{
+    width: 30%;
+    margin: auto;
+}
+.footer .container ul li{
+    float: left;
+}
+.footer .container ul li img{
+    width: 40px;
+    height: 40px;
+}
+.footer .container p{
+    color: white;
+}
+.footer .container p span{
+    color: #ff305b;
+}
